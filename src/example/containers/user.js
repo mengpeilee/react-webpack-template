@@ -4,9 +4,7 @@ import axios from 'axios';
 import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {ShareStyle, Constants, Theme, TestId} from '../../util';
-import {
-
-} from '../actions';
+//import { } from '../actions';
 import {translates} from '../../i18n';
 import config from '../../config';
 
@@ -24,17 +22,9 @@ const User = () => {
   let history = useHistory();
   const dispatch = useDispatch();
 
-  useEffect(() => {
-  
-  }, []);
+  useEffect(() => {}, []);
 
-
-
-  return (
-    <CaptionContainer>
-        Test 456
-    </CaptionContainer>
-  );
+  return <CaptionContainer>Test 456</CaptionContainer>;
 };
 
 export {User};

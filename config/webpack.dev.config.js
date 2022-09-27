@@ -26,7 +26,7 @@ module.exports = merge(common, {
     hot: true,
     proxy: {
       '/api': {
-        target: 'https://your_api_path',
+        target: 'https://yourApiPath.com/api',
         changeOrigin: true,
       },
     },
