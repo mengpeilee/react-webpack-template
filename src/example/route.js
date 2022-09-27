@@ -1,14 +1,8 @@
 import React from 'react';
 import {Route, useHistory, Switch} from 'react-router-dom';
 import {Global, css} from '@emotion/core';
-import {
-    ROUTER_EXAMPLE_PAGE,
-ROUTER_EXAMPLE_USER
-} from './constants';
-import {
-Main,
-User
-} from './containers';
+import {ROUTER_EXAMPLE_PAGE, ROUTER_EXAMPLE_USER} from './constants';
+import {Main, User} from './containers';
 import {ShareStyle} from '../util';
 const {Fonts} = ShareStyle;
 const AddDeviceswitch = () => {
@@ -31,11 +25,7 @@ const AddDeviceswitch = () => {
           path={ROUTER_EXAMPLE_PAGE}
           component={Main}
         />
-        <Route
-          history={history}
-          path={ROUTER_EXAMPLE_USER}
-          component={User}
-        />
+        <Route history={history} path={ROUTER_EXAMPLE_USER} component={User} />
       </Switch>
     </>
   );
