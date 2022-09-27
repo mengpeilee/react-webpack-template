@@ -67,13 +67,7 @@ const Header = props => {
           <ArrowRightCircle size={14} color={Primary_600} />
         </IconContainer>
       </Description>
-      {hasMail && (
-        <MailContainer>
-          <Mail href="mailto:support@skywatch24.com">
-            support@skywatch24.com
-          </Mail>
-        </MailContainer>
-      )}
+      {hasMail && <MailContainer></MailContainer>}
     </HeaderContainer>
   );
 };

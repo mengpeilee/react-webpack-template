@@ -1,4 +1,4 @@
-const host = 'https://service.skywatch24.com:5567';
+const host = 'https://api.example.com:4000';
 
 export const initSocket = () => {
   if (USER_NAME !== '' && API_KEY !== '' && LANG_SELECTOR !== '') {
